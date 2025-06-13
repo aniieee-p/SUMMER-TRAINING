@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tech Fest Registration Form</title>
+</head>
+<body>
+  <h1>Tech Fest Registration Form</h1>
+
+  <form action="/submit" method="POST">
+    <!-- Name -->
+    <div>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+
+    <!-- Email -->
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <!-- College -->
+    <div>
+      <label for="college">College Name:</label>
+      <input type="text" id="college" name="college" required>
+    </div>
+
+    <!-- Year -->
+    <div>
+      <label for="year">Year of Study:</label>
+      <select id="year" name="year">
+        <option value="">--Select--</option>
+        <option value="1">1st Year</option>
+        <option value="2">2nd Year</option>
+        <option value="3">3rd Year</option>
+        <option value="4">4th Year</option>
+      </select>
+    </div>
+
+    <!-- Gender -->
+    <div>
+      <label>Gender:</label>
+      <input type="radio" id="male" name="gender" value="Male">
+      <label for="male">Male</label>
+
+      <input type="radio" id="female" name="gender" value="Female">
+      <label for="female">Female</label>
+
+      <input type="radio" id="other" name="gender" value="Other">
+      <label for="other">Other</label>
+    </div>
+
+    <!-- Events -->
+    <div>
+      <label>Choose Events:</label><br>
+      <input type="checkbox" id="coding" name="events" value="Coding">
+      <label for="coding">Coding Challenge</label><br>
+
+      <input type="checkbox" id="quiz" name="events" value="Tech Quiz">
+      <label for="quiz">Tech Quiz</label><br>
+
+      <input type="checkbox" id="robo" name="events" value="Robotics">
+      <label for="robo">Robotics</label><br>
+
+      <input type="checkbox" id="uiux" name="events" value="UI/UX">
+      <label for="uiux">UI/UX Design</label>
+    </div>
+
+    <!-- Comments -->
+    <div>
+      <label for="comments">Any Suggestions or Comments:</label><br>
+      <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Write here..."></textarea>
+    </div>
+
+    <!-- Submit Button -->
+    <div>
+      <button type="submit">Register</button>
+    </div>
+  </form>
+</body>
+</html>
